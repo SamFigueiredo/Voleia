@@ -1,5 +1,0 @@
-<resources>
-    <style name="Theme.VoleiIA" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:windowBackground">@android:color/black</item>
-    </style>
-</resources>
