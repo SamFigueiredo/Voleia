@@ -1,3 +1,5 @@
+import java.net.HttpURLConnection
+import java.net.URL
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -60,7 +62,7 @@ val downloadModel by tasks.registering {
         var ok = false
         for (u in urls) {
             try {
-                val conn = java.net.URL(u).openConnection() as java.net.HttpURLConnection
+                val conn = URL(u).openConnection() as HttpURLConnection
                 conn.instanceFollowRedirects = true
                 conn.connectTimeout = 20000
                 conn.readTimeout = 120000
